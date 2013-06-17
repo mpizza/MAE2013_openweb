@@ -1,0 +1,13 @@
+{
+  "name": "Mozilla MAE2013 Talk",
+  "description": "Mozilla MAE2013 Talk",
+  "launch_path": "/mozilla.html",
+  "icons": {
+    "128": "/pictures/m-logo.png"
+  },
+  "developer": {
+    "name": "Mozilla",
+    "url": "http://your-homepage-here.org"
+  },
+  "default_locale": "en"
+}
