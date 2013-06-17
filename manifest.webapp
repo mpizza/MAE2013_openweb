@@ -1,13 +1,15 @@
 {
-  "name": "Mozilla MAE2013 Talk",
+  "name": "MAE2013",
   "description": "Mozilla MAE2013 Talk",
-  "launch_path": "/mozilla.html",
+  "launch_path": "/MAE2013_openweb/index.html",
+	"version": "0.5",
+	"installs_allowed_from": ["https://marketplace.firefox.com", "*"],
   "icons": {
-    "128": "/pictures/m-logo.png"
+    "128": "/MAE2013_openweb/pictures/m-logo.png"
   },
   "developer": {
     "name": "Mozilla",
-    "url": "http://your-homepage-here.org"
+    "url": "https://github.com/mpizza/MAE2013_openweb"
   },
   "default_locale": "en"
 }

@@ -4,6 +4,7 @@
 	<title>Shower Presentation Template</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=1274, user-scalable=no">
+	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="themes/mozilla/styles/style.css">
 	<!--
 		To apply styles to the certain slides
@@ -11,13 +12,13 @@
 		-->
 	<style>
 		#Cover h2 {
-			color:#FFF;
+			color:#efefef;
 			text-align:center;
 			font-size:40px;
 			}
 		#FitToWidth h2,
 		#FitToHeight h2 {
-			color:#fff;
+			color:#efefef;
 			text-align:center;
 			}
 	</style>
@@ -69,8 +70,8 @@
 				<header>
 					<h2>We’re building a better Internet</h2>
 				</header>
-				<p class="huge">Mozilla's mission is to promote <em>openness</em>, 
-				<em>innovation</em> &amp; <em>opportunity on the Web.</em></p>
+				<p class="huge">Mozilla's mission is to promote <em>“openness”</em>, 
+				<em>“innovation”</em> &amp; <em>“opportunity” on the Web.</em></p>
 			</section>
 		</div>
 	</div>
@@ -79,7 +80,7 @@
 		<div>
 			<section>
 				<header class="only_header">
-					<h2>openness</h2>
+					<h2>Openness</h2>
 				</header>
 			</section>
 		</div>
@@ -91,18 +92,20 @@
 				<header>
 					<h2>The New Mozilla</h2>
 				</header>
-				<figure>
-					<img src="pictures/marketplace.png" alt="marketplace"/>
-					<figcaption>Firefox Marketplace</figcaption>
-				</figure>
-				<figure>
-					<img src="pictures/persona.png" alt="persona"/>
-					<figcaption>Persona (BrowserID)</figcaption>
-				</figure>
-				<figure>
-					<img src="pictures/firefoxos.png" alt="firefox OS"/>
-					<figcaption>Firefox OS</figcaption>
-				</figure>
+				<div id="figurebox">
+					<figure id="persona">
+						<img src="pictures/persona.png" alt="persona"/>
+						<figcaption>Persona (BrowserID)</figcaption>
+					</figure>
+					<figure id="marketplace">
+						<img src="pictures/marketplace.png" alt="marketplace"/>
+						<figcaption>Firefox Marketplace</figcaption>
+					</figure>
+					<figure id="firefoxos">
+						<img src="pictures/firefoxos.png" alt="firefox OS"/>
+						<figcaption>Firefox OS</figcaption>
+					</figure>
+				</div>
 			</section>
 		</div>
 	</div>
@@ -113,7 +116,7 @@
 				<header>
 					<h2>Firefox OS</h2>
 				</header>
-				<figure>
+				<figure class="center">
 					<img src="pictures/firefoxos.png" alt="firefox OS"/>
 					<figcaption>Firefox OS is An Open Source Project</figcaption>
 				</figure>
@@ -127,8 +130,8 @@
 				<header>
 					<h2>Gecko &amp; Gaia</h2>
 				</header>
-				<p>Gecko is <code>open source</code></p>
-				<p>Gaia is <code>open source</code></p>
+				<p class="center">Gecko is <code>open source</code></p>
+				<p class="center">Gaia is <code>open source</code></p>
 			</section>
 		</div>
 	</div>
@@ -136,7 +139,7 @@
 	<div class="slide blue" id="also">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>And Also......</h2>
 				</header>
 			</section>
@@ -146,7 +149,7 @@
 	<div class="slide blue" id="bugisopen">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>Bug Is Open</h2>
 				</header>
 			</section>
@@ -160,10 +163,10 @@
 					<h2>Bugzilla</h2>
 				</header>
 				<figure>
-					<img src="pictures/bugzilla.png" alt="bugzilla"/>
+					<img class="firefoxosbughome" src="pictures/firefoxosbugzilla.png" alt="bugzilla"/>
 					<figcaption>
 						<a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Boot2Gecko">
-							bugzilla
+							https://bugzilla.mozilla.org/
 						</a>
 						</figcaption>
 				</figure>
@@ -178,14 +181,16 @@
 					<h2>Bugzilla</h2>
 				</header>
 				<figure>
-					<img src="pictures/bugzilla.png" alt="bugzilla"/>
+					<img class="firefoxosbughome" src="pictures/firefoxosbugzilla.png" alt="bugzilla"/>
 					<figcaption>
 						<a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Boot2Gecko">
-							bugzilla
+							https://bugzilla.mozilla.org/
 						</a>
 						</figcaption>
 				</figure>
-				<p>finding a bug</p>
+				<ul class="right">
+					<li>finding a bug</li>
+				<ul>
 			</section>
 		</div>
 	</div>	
@@ -197,15 +202,17 @@
 					<h2>Bugzilla</h2>
 				</header>
 				<figure>
-					<img src="pictures/bugzilla.png" alt="bugzilla"/>
+					<img class="firefoxosbughome" src="pictures/firefoxosbugzilla.png" alt="bugzilla"/>
 					<figcaption>
 						<a href="https://bugzilla.mozilla.org/describecomponents.cgi?product=Boot2Gecko">
-							bugzilla
+							https://bugzilla.mozilla.org/
 						</a>
 						</figcaption>
 				</figure>
-				<p>finding a bug</p>
-				<p>file a bug</p>
+				<ul class="right">
+					<li>finding a bug</li>
+					<li>file a bug</li>
+				<ul>
 			</section>
 		</div>
 	</div>	
@@ -216,7 +223,7 @@
 				<header>
 					<h2>Bugzilla</h2>
 				</header>
-				<figure>
+				<figure class="center">
 					<img src="pictures/oldkeyboard.jpg" alt="bugzilla"/>
 					<figcaption>
 						<small>圖片來自：http://www.newxgroup.com/</small>
@@ -232,8 +239,9 @@
 				<header>
 					<h2>Help us to fix a bug!!</h2>
 				</header>
-				<figure>
-					<img src="pictures/please.jpg" alt="bugzilla"/>
+				<figure class="center">
+					<img src="pictures/please_huge.jpg" alt="bugzilla"/>
+					<br/><small>圖片來自：http://www.hdwallpapersarena.com/shrek-hd-wallpapers.html</small>
 				</figure>
 			</section>
 		</div>
@@ -245,9 +253,12 @@
 				<header>
 					<h2>Open source <em>Rock</em>!!</h2>
 				</header>
-				<p class="huge">We</p>
+				<p>How can you not be romantic <br/>about <em>open</em>!?</p>
 				<p class="heart"></p>
-				<p class="huge"><em>open</em> !!</p>
+				<figure id="pitt">
+					<img src="pictures/pitt.png" alt="bugzilla"/>
+					<br/><small>圖片來自：http://www.imdb.com/media/rm330480640/tt1210166?ref_=tt_ov_i</small>
+				</figure>
 			</section>
 		</div>
 	</div>
@@ -255,9 +266,18 @@
 	<div class="slide blue" id="istheplatform">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>Firefox OS is the Open Web platform</h2>
-					<h3>Open Web Apps</h3>
+				</header>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="OpenStandard">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Open Standard Web Apps</h2>
 				</header>
 			</section>
 		</div>
@@ -267,7 +287,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>standards</h2>
+					<h2>Standards</h2>
 				</header>
 				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
 			</section>
@@ -278,7 +298,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>standards</h2>
+					<h2>Standards</h2>
 				</header>
 				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
 				<ul>
@@ -294,7 +314,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>standards</h2>
+					<h2>Standards</h2>
 				</header>
 				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
 				<ul>
@@ -313,7 +333,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>standards</h2>
+					<h2>Standards</h2>
 				</header>
 				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
 				<ul>
@@ -335,7 +355,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>standards</h2>
+					<h2>Standards</h2>
 				</header>
 				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
 				<ul>
@@ -371,20 +391,29 @@
 		<div>
 			<section>
 				<header class="only_header">
-					<h2>innovation</h2>
+					<h2>Innovation</h2>
 				</header>
 			</section>
 		</div>
 	</div>
 
-	<div class="slide blue" id="Mozilla-designed APIs">
+	<div class="slide blue" id="Mozilla-designedAPIs">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Mozilla-designed APIs</h2>
+				</header>
+		</div>
+	</div>
+
+	<div class="slide blue" id="ClosingGap">
 		<div>
 			<section>
 				<header>
-					<h2>Mozilla-designed APIs</h2>
+					<h2>Like Native Apps</h2>
 				</header>
-				<p>Using open Web <code>standards</code> and 
-				<code>Mozilla-designed APIs</code>, 
+				<p class="huge">Using open Web <em>“standards”</em> and 
+				<em>“Mozilla-designed APIs”</em>, 
 				closing the gap between Web and native apps for the first time.</p>
 			</section>
 		</div>
@@ -393,10 +422,10 @@
 	<div class="slide blue" id="tobestandards">
 		<div>
 			<section>
-				<header class="only_header">
+				<header>
 					<h2>Mozilla-designed APIs</h2>
 				</header>
-				<p>Intended eventual standards</p>
+				<p class="huge center">Intended eventual standards</p>
 			</section>
 		</div>
 	</div>
@@ -486,7 +515,7 @@
 	<div class="slide blue" id="ButSecurity">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>But !!</h2>
 				</header>
 			</section>
@@ -496,7 +525,7 @@
 	<div class="slide blue" id="Security">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>Security</h2>
 				</header>
 			</section>
@@ -605,12 +634,10 @@
 				<header>
 					<h2>Packaged</h2>
 				</header>
-				<ul>
-					<li>
+				<p>
 						If <code>reviewed</code>, <code>approved</code>, and <code>digitally signed
 						</code> by an <br/><code> authorized Marketplace.</code>
-					</li>
-				</ul>
+				</p>
 			</section>
 		</div>
 	</div>
@@ -621,11 +648,9 @@
 				<header>
 					<h2>Packaged</h2>
 				</header>
-				<ul>
-					<li>
+				<p class="huge center">
 						Get Privileged Permission
-					</li>
-				</ul>
+				</p>
 			</section>
 		</div>
 	</div>
@@ -665,7 +690,7 @@
 	<div class="slide blue" id="MustBePackaged">
 		<div>
 			<section>
-				<header>
+				<header class="only_header">
 					<h2>Privileged and Certified Must Be Packaged</h2>
 				</header>
 			</section>
@@ -678,7 +703,14 @@
 				<header>
 					<h2>Privileged and Certified Must Be Packaged</h2>
 				</header>
-				<img src="pictures/permissions.png" alt="manifest with permissions" class="middle">
+				<pre>
+					<code>"permissions": {</code>
+					<code>  "contacts": {</code>
+					<code>    "description": "Required for autocompletion in the share screen",</code>
+					<code>    "access": "readcreate"</code>
+					<code>   }</code>
+					<code>}</code>
+				</pre>
 			</section>
 		</div>
 	</div>
@@ -687,9 +719,11 @@
 		<div>
 			<section>
 				<header>
-					<h2>Ready To Go The Firefox MarketPlace?</h2>
+					<h2>Ready To Go TO The Firefox MarketPlace?</h2>
 				</header>
-				<img src="pictures/marketplace.png" alt="marketplace" class="middle">
+				<figure class="center">
+					<img src="pictures/marketplace.png" alt="marketplace" class="center">
+				</figure>
 			</section>
 		</div>
 	</div>
@@ -700,7 +734,14 @@
 				<header>
 					<h2>Firefox OS Simulator</h2>
 				</header>
-				<img src="pictures/simulator-homescreen.png" alt="Firefox OS Simulator" class="middle">
+				<figure class="center">
+					<img src="pictures/simulator-homescreen.png" alt="Firefox OS Simulator">
+				</figure>
+				<p class="center">
+					<a href="https://developer.mozilla.org/docs/Tools/Firefox_OS_Simulator" title="Firefox OS Simulator">
+					Firefox OS Simulator
+					</a>
+				</p>
 			</section>
 		</div>
 	</div>
@@ -711,7 +752,9 @@
 				<header>
 					<h2>Push To Devices</h2>
 				</header>
-				<img src="pictures/device-connected.png" alt="push to devices">
+				<figure class="center">
+					<img src="pictures/device-connected.png" alt="push to devices">
+				</figure>
 			</section>
 		</div>
 	</div>
@@ -722,20 +765,9 @@
 				<header>
 					<h2>Debuger</h2>
 				</header>
-				<img src="pictures/simulator-overview.png" alt="simulator overview" class="middle">
-			</section>
-		</div>
-	</div>
-
-	<div class="slide blue" id="DownloadSimulator">
-		<div>
-			<section>
-				<header>
-					<h2>Download</h2>
-				</header>
-				<a href="https://developer.mozilla.org/docs/Tools/Firefox_OS_Simulator" title="Firefox OS Simulator">
-				Firefox_OS_Simulator
-				</a>
+				<figure class="center">
+					<img src="pictures/simulator-overview.png" alt="simulator overview">
+				</figure>
 			</section>
 		</div>
 	</div>
@@ -743,10 +775,22 @@
 	<div class="slide blue" id="Opportunity">
 		<div>
 			<section>
+				<header class="only_header">
+					<h2>Opportunity</h2>
+				</header>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="MoreOpportunity">
+		<div>
+			<section>
 				<header>
 					<h2>Firefox MarketPlace Is An <em>Opportunity</em></h2>
 				</header>
+				<figure class="center">
 				<img src="pictures/marketplace.png" alt="marketplace" class="left">
+				</figure>
 				<p>
 					The Firefox Marketplace gives users the opportunity to find, try and buy/sale Apps and content that matters most to them.
 				</p>
@@ -765,111 +809,126 @@
 		</div>
 	</div>
 
-	<div class="slide blue" id="InTheMiddle"><div>
-		<section>
-			<header>
-				<h2>In the Middle</h2>
-			</header>
-			<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 512 512" class="middle">
-				<path fill="#0174A7" d="m315 259l18-18 179 179v-36l-161-161 18-18 143 143v-36l-125-125 18-18 107 107v-225c0-28-23-51-51-51h-410c-28 0-51 23-51 51v410c0 28 23 51 51 51h191c17-25 14-59-8-81l-63-63-63-63c-55-55-55-145-0-199 55-55 144-55 199 0l9 7h109l-163 163v-107l-9-9c-25-25-66-25-91-0-25 25-25 66 0 91l63 63 63 63c37 37 49 89 37 135h136c28 0 51-23 51-51v-5l-197-197z"/>
-			</svg>
-		</section>
-	</div></div>
+	<div class="slide blue" id="DeveloperHome">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace</h2>
+				</header>
+				<img src="pictures/dev-marketplace-home.png" alt="MarketPlace overview" class="middle">
+				<br/>
+				<a href="https://marketplace.firefox.com/developers/">
+					https://marketplace.firefox.com/developers/
+				</a>
+			</section>
+		</div>
+	</div>
 
+	<div class="slide blue" id="SubmitApp">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace Submit</h2>
+				</header>
+				<img src="pictures/dev-marketplace-home-submit.png" alt="MarketPlace overview" class="middle">
+			</section>
+		</div>
+	</div>
 
-	<div class="slide cover blue" id="FitToHeight"><div>
-		<section>
-			<header>
-				<h2>Fit to height</h2>
-			</header>
-			<img src="pictures/picture.jpg" alt="">
-		</section>
-	</div></div>
+	<div class="slide blue" id="Devices">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace Devices</h2>
+				</header>
+				<img src="pictures/dev-marketplace-devices.png" alt="MarketPlace overview" class="middle">
+			</section>
+		</div>
+	</div>
 
-	<div class="slide cover w" id="FitToWidth"><div>
-		<section>
-			<header>
-				<h2>Fit to width</h2>
-			</header>
-			<img src="pictures/picture.jpg" alt="">
-		</section>
-	</div></div>
+	<div class="slide blue" id="Apptype">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace Type</h2>
+				</header>
+				<img src="pictures/dev-marketplace-app-type.png" alt="MarketPlace overview" class="middle">
+			</section>
+		</div>
+	</div>
 
-	<div class="slide blue" id="CodeSample"><div>
-		<section>
-			<header>
-				<h2>Code Sample</h2>
-			</header>
-			<pre>
-				<code>&lt;html lang="en-US"&gt;</code>
-				<code><mark>&lt;head&gt;</mark></code>
-				<code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-				<code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-				<code>    &lt;link rel="stylesheet" href="s/screen.css"&gt;</code>
-				<code>    &lt;script src="j/jquery.js"&gt;&lt;/script&gt;</code>
-				<code><mark>&lt;/head&gt;</mark></code>
-			</pre>
-		</section>
-	</div></div>
+	<div class="slide blue" id="ValidationResult">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace Validation Result</h2>
+				</header>
+				<img src="pictures/dev-marketplace-validation.png" alt="MarketPlace overview" class="middle">
+			</section>
+		</div>
+	</div>
 
-	<div class="slide blue" id="CodeNotes"><div>
-		<section>
-			<header>
-				<h2>Code Notes</h2>
-			</header>
-			<pre>
-				<code><mark>&lt;html</mark> lang="en-US"&gt;</code>
-			</pre>
-			<p class="note">May or may not crash your browser</p>
-			<pre>
-				<code><mark>&lt;meta</mark> charset="<mark>UTF-8</mark>"&gt;</code>
-			</pre>
-			<p class="note">Lock up your machine</p>
-		</section>
-	</div></div>
+	<div class="slide blue" id="AppDetail">
+		<div>
+			<section>
+				<header>
+					<h2>Firefox MarketPlace Detail</h2>
+				</header>
+				<img src="pictures/dev-marketplace-app-detail.png" alt="MarketPlace overview" class="middle">
+			</section>
+		</div>
+	</div>
 
-	<div class="slide shout blue" id="Shout"><div>
-		<section>
-			<header>
-				<h2>Warning<br>Message</h2>
-			</header>
-		</section>
-	</div></div>
+	<div class="slide blue" id="AppDone">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Done!!!</h2>
+				</header>
+				<!-- <img src="pictures/dev-marketplace-app-detail.png" alt="MarketPlace overview" class="middle"> -->
+			</section>
+		</div>
+	</div>
 
-	<div class="slide shout blue" id="Demo"><div>
-		<section>
-			<header>
-				<h2><a href="examples/index.htm" target="_blank">Demo</a></h2>
-			</header>
-		</section>
-	</div></div>
+	<div class="slide blue" id="PaymentAndReceipts">
+		<div>
+			<section>
+				<header>
+					<h2>Payment And Receipts</h2>
+				</header>
+				<ul>
+					<li><a href="https://wiki.mozilla.org/WebAPI/WebPayment">WebPayment API</a> to facilitate in-app payments and app purchases from any Marketplace</li>
+					<li><a href="https://wiki.mozilla.org/Apps/WebApplicationReceipt">OWA Receipts</a> to verify paid apps on any device and sell apps from any Marketplace</li>
+				<ul>
+			</section>
+		</div>
+	</div>
 
-	<div class="slide blue" id="BlockQuote"><div>
-		<section>
-			<header>
-				<h2>Block Quote</h2>
-			</header>
-			<blockquote>
-				<p>This tool is provided without warranty, guarantee, or much in the way of explanation. Note that use of this tool may or may not crash your browser, lock up your machine, erase your hard drive.</p>
-			</blockquote>
-		</section>
-	</div></div>
+	<div class="slide blue cover" id="QA">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Q &amp; A</h2>
+				</header>
+				<footer class="byline">Gary (PoYu), Chen, gchen(at)mozilla.com</footer>
+			</section>
+		</div>
+	</div>
 
-	<div class="slide blue" id="ThankYou"><div>
-		<section>
-			<header>
-				<h2>Shower Presentation Template</h2>
-			</header>
-			<p>Vadim Makeev, Opera Software</p>
-			<p>Mozilla styling by Chris Heilmann, Mozilla</p>
-			<ul>
-				<li><a href="http://pepelsbey.net">pepelsbey.net</a></li>
-				<li><a href="http://twitter.com/pepelsbey">twitter.com/pepelsbey</a></li>
-				<li><a href="mailto:pepelsbey@gmail.com">pepelsbey@gmail.com</a></li>
-			</ul>
-			<p>Shower: <a href="http://github.com/pepelsbey/shower">github.com/pepelsbey/shower</a></p>
-		</section>
-	</div></div>
+	<div class="slide blue" id="ThankYou">
+		<div>
+			<section>
+				<header>
+					<h2>ThankYou</h2>
+				</header>
+				<ul>
+					<li><a href="mailto:gchen@mozilla.com">gchen(at)mozilla.com</a></li>
+					<li><a href="http://tech.mozilla.com.tw">MozTech 謀智台客</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Apps MDN</a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
 	<!--
 		To hide progress bar from entire presentation
 		just remove “progress” element.
