@@ -70,8 +70,8 @@
 				<header>
 					<h2>We’re building a better Internet</h2>
 				</header>
-				<p class="huge">Mozilla's mission is to promote <em>“openness”</em>, 
-				<em>“innovation”</em> &amp; <em>“opportunity” on the Web.</em></p>
+				<p class="huge">Mozilla's mission is to promote <em class="important">“openness”</em>, 
+				<em class="important">“innovation”</em> &amp; <em class="important">“opportunity”</em> on the Web.</p>
 			</section>
 		</div>
 	</div>
@@ -251,9 +251,9 @@
 		<div>
 			<section>
 				<header>
-					<h2>Open source <em>Rock</em>!!</h2>
+					<h2>Let's Rock With Open Source!!</h2>
 				</header>
-				<p>How can you not be romantic <br/>about <em>open</em>!?</p>
+				<p class="font36" style="width:300px;">How can you not be romantic about <em>open source</em> !?</p>
 				<p class="heart"></p>
 				<figure id="pitt">
 					<img src="pictures/pitt.png" alt="bugzilla"/>
@@ -412,8 +412,8 @@
 				<header>
 					<h2>Like Native Apps</h2>
 				</header>
-				<p class="huge">Using open Web <em>“standards”</em> and 
-				<em>“Mozilla-designed APIs”</em>, 
+				<p class="font36">Using open Web <em class="important">“standards”</em> and 
+				<em class="important">“Mozilla-designed APIs”</em>, 
 				closing the gap between Web and native apps for the first time.</p>
 			</section>
 		</div>
@@ -463,10 +463,10 @@
 				</header>
 					<p>
 						<pre>
-							<code>// First, obtain a telephony object.</code>
+							<code class="comment">// First, obtain a telephony object.</code>
 							<code>var telephony = navigator.mozTelephony;</code>
 							<code>    </code>
-							<code>// Then, we dial out.</code>
+							<code class="comment">// Then, we dial out.</code>
 							<code>var outgoing = telephony.dial(phoneNumber);</code>
 						</pre>
 					</p>
@@ -482,7 +482,7 @@
 				</header>
 					<p>
 						<pre>
-							<code>// Send a sms by mozSms</code>
+							<code class="comment">// Send a sms by mozSms</code>
 							<code>    </code>
 							<code>var req = navigator.mozSms.send(number, text);</code>
 							<code>req.onsuccess = function onsuccess(e) {</code>
@@ -500,14 +500,13 @@
 				<header>
 					<h2>And More Web Api for Mobile</h2>
 				</header>
-					<ul>
+					<ul class="font36">
 						<li>WebBluetooth</li>
 						<li>Contacts API</li>
 						<li>Device Storage API</li>
 						<li>WiFi Information API</li>
-						<li>more.......</li>	
+						<li>more <a href="https://wiki.mozilla.org/WebAPI" title="webapi">Web Api</a></li>	
 					</ul>
-					<a href="https://wiki.mozilla.org/WebAPI" title="webapi">Web Api</a>
 			</section>
 		</div>
 	</div>
@@ -538,7 +537,7 @@
 				<header>
 					<h2>Web App Type</h2>
 				</header>
-				<ul>
+				<ul class="font36">
 					<li>Hosted/Packaged</li>
 					<li>privileged</li>
 					<li>Certified</li>
@@ -553,12 +552,9 @@
 				<header>
 					<h2>Hosted</h2>
 				</header>
-				<ul>
-					<li>Hosted
-						<p>Hosted apps are located on a web server and loaded via HTTP.
-						 Only the app manifest is stored on the mobile phone.</p>
-					</li>
-				</ul>
+					<p class="font36">
+					Hosted apps are located on a web server and loaded via <em class="important">“HTTP”</em>.
+					 Only the app manifest is stored on the mobile phone.</p>
 			</section>
 		</div>
 	</div>
@@ -569,13 +565,10 @@
 				<header>
 					<h2>Hosted</h2>
 				</header>
-				<ul>
-					<li>Hosted
-						<p>Hosted apps are located on a web server and loaded via HTTP.
-						 Only the app manifest is stored on the mobile phone.</p>
+				<p class="font36">
+					Hosted apps are located on a web server and loaded via <em class="important">“HTTP”</em>.
+					 Only the app manifest is stored on the mobile phone.</p>
 						<img src="pictures/wikipedia.png" alt="marketplace wikipedia" class="middle">
-					</li>
-				</ul>
 			</section>
 		</div>
 	</div>
@@ -587,7 +580,7 @@
 				<header>
 					<h2>Hosted</h2>
 				</header>
-				<p>
+				<p class="font36">
 					<code>alarms</code>, <code>desktop-notification</code>, <code>storage</code>
 					<br/> and more .....
 				</p>
@@ -601,12 +594,8 @@
 				<header>
 					<h2>Packaged</h2>
 				</header>
-				<ul>
-					<li>Packaged
-						<p>A packaged app consists of a ZIP file containing application resources
-						 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
-					</li>
-				</ul>
+					<p class="font36">A packaged app consists of a <em class="important">“ZIP file”</em> containing application resources
+					 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
 			</section>
 		</div>
 	</div>
@@ -617,13 +606,9 @@
 				<header>
 					<h2>Packaged</h2>
 				</header>
-				<ul>
-					<li>Packaged
-						<p>A packaged app consists of a ZIP file containing application resources
-						 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
+					<p class="font36">A packaged app consists of a <em class="important">“ZIP file”</em> containing application resources
+					 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
 						<img src="pictures/calculator.png" alt="marketplace calculator" class="middle">
-					</li>
-				</ul>
 			</section>
 		</div>
 	</div>
@@ -634,9 +619,9 @@
 				<header>
 					<h2>Packaged</h2>
 				</header>
-				<p>
-						If <code>reviewed</code>, <code>approved</code>, and <code>digitally signed
-						</code> by an <br/><code> authorized Marketplace.</code>
+				<p class="font36">
+						If <em>reviewed</em>, <em>approved</em>, and <em>digitally signed
+						</em> by an <br/><em> authorized Marketplace.</em>
 				</p>
 			</section>
 		</div>
@@ -661,10 +646,10 @@
 				<header>
 					<h2>Privileged</h2>
 				</header>
-				<p>
+				<p class="font36">
 					 All the permissions of hosted apps
 				</p>
-				<p>	
+				<p class="font36">	
 					<code>contacts</code>, <code>systemXHR</code>, <code>tcp-socket</code> and more......
 				</p>
 			</section>
@@ -678,7 +663,7 @@
 					<h2>Certified</h2>
 				</header>
 					<p>
-						System apps that have been approved by the Operator or OEM (due to risk of device corruption or risk to critical functionality). System apps and services only; not intended for third-party applications.
+						System apps that have been approved by the <em class="important">Operator</em> or <em class="important">OEM</em> (due to risk of device corruption or risk to critical functionality). System apps and services only not intended for third-party applications.
 					</p>
 					<p>
 						This designation is reserved for just a small number of critical applications. Examples: SMS, Bluetooth, camera, system clock, telephony, and the default dialer (to ensure that emergency services are always accessible).
@@ -691,7 +676,7 @@
 		<div>
 			<section>
 				<header class="only_header">
-					<h2>Privileged and Certified Must Be Packaged</h2>
+					<h2>Privileged and Certified Must Be <em class="important">Packaged</em></h2>
 				</header>
 			</section>
 		</div>
@@ -701,12 +686,12 @@
 		<div>
 			<section>
 				<header>
-					<h2>Privileged and Certified Must Be Packaged</h2>
+					<h2>Declare In Manifest</h2>
 				</header>
 				<pre>
 					<code>"permissions": {</code>
 					<code>  "contacts": {</code>
-					<code>    "description": "Required for autocompletion in the share screen",</code>
+					<code>    "description": "say someting........",</code>
 					<code>    "access": "readcreate"</code>
 					<code>   }</code>
 					<code>}</code>
@@ -719,10 +704,23 @@
 		<div>
 			<section>
 				<header>
-					<h2>Ready To Go TO The Firefox MarketPlace?</h2>
+					<h2>Ready To Go To The Firefox MarketPlace?</h2>
 				</header>
 				<figure class="center">
 					<img src="pictures/marketplace.png" alt="marketplace" class="center">
+				</figure>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="cannotpass">
+		<div>
+			<section>
+				<header>
+					<h2>Without Testing ?!</h2>
+				</header>
+				<figure class="center">
+					<img src="pictures/you_cannot_pass.png" alt="marketplace">
 				</figure>
 			</section>
 		</div>
@@ -732,7 +730,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>Firefox OS Simulator</h2>
+					<h2>Firefox OS Simulator 3.0</h2>
 				</header>
 				<figure class="center">
 					<img src="pictures/simulator-homescreen.png" alt="Firefox OS Simulator">
@@ -792,7 +790,9 @@
 				<img src="pictures/marketplace.png" alt="marketplace" class="left">
 				</figure>
 				<p>
-					The Firefox Marketplace gives users the opportunity to find, try and buy/sale Apps and content that matters most to them.
+					The Firefox Marketplace gives users the opportunity to <em class="important">find</em>, 
+					<em class="important">try</em> and 
+					<em class="important">buy/sale</em> Apps and content that matters most to them.
 				</p>
 			</section>
 		</div>

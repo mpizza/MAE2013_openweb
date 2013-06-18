@@ -204,26 +204,29 @@ BODY {
 
 /* Code */
 .slide pre {
-	margin:0 0 45px;
+	padding-left: 20px;
+	margin:0;
 	counter-reset:code;
 	white-space:normal;
+	background: #000;
 	}
 	.slide pre code {
 		display:block;
 		padding:0;
 		background:none;
 		white-space:pre;
+		color:rgb(0, 182, 0);
 		}
 	.slide pre code:before {
 		position:absolute;
-		margin:0 0 0 -120px;
+		margin:0 0 0 -140px;
 		width:110px;
-		color:rgb(182, 182, 182);
+		color:rgb(0, 0, 0);
 		text-align:right;
 		counter-increment:code;
 		content:counter(code, decimal-leading-zero)'.';
 		}
-	.slide pre mark {
+	.slide mark, .slide pre mark {
 		padding:3px 8px;
 		-webkit-border-radius:8px;
 		-moz-border-radius:8px;
@@ -232,7 +235,7 @@ BODY {
 		color:#000;
 		font-style:normal;
 		}
-	.slide pre .important {
+	.slide .important, .slide pre .important {
 		background:#C00;
 		color:#FFF;
 		font-weight:normal;
@@ -243,6 +246,7 @@ BODY {
 		color:#888;
 		}
 
+    
 /* Cover */
 .slide.cover section {
 	overflow:hidden;
@@ -565,3 +569,10 @@ small{
 	font-size: 12px;
 }
 
+.slide em.important{
+	background: none;
+	color: #f00;
+}
+.slide .font36{
+	font-size: 36px;
+}
