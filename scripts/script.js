@@ -279,3 +279,12 @@
 	}, false);
 
 }());
+
+
+function onUpdateReady() {
+  window.applicationCache.swapCache();
+}
+window.applicationCache.addEventListener('updateready', onUpdateReady);
+if(window.applicationCache.status === window.applicationCache.UPDATEREADY) {
+  onUpdateReady();
+}

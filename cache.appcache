@@ -1,10 +1,18 @@
 CACHE MANIFEST
-# v1.0.1 - 2013-06-18
-# This is a comment.
+# v1.0.3 - 2013-06-18
+NETWORK:
+*
+CACHE:
+#root
 favicon.ico
 index.html
 license.txt
 manifest.webapp
+
+#script
+scripts/script.js
+
+#pictures
 pictures/.DS_Store
 pictures/Android.png
 pictures/bugzilla.png
@@ -45,7 +53,8 @@ pictures/simulator-homescreen.png
 pictures/Simulator-overview.png
 pictures/wikipedia.png
 pictures/you_cannot_pass.png
-scripts/script.js
+
+#FONTS
 mozilla/fonts/OpenSans-Bold-webfont.eot
 mozilla/fonts/OpenSans-Bold-webfont.svg
 mozilla/fonts/OpenSans-Bold-webfont.ttf
@@ -88,6 +97,9 @@ mozilla/fonts/OpenSans-SemiboldItalic-webfont.ttf
 mozilla/fonts/OpenSans-SemiboldItalic-webfont.woff
 mozilla/fonts/TargetBlank.otf
 mozilla/fonts/TargetBlank.svg
+
+
+#style IMAGE
 mozilla/images/bg-blue-2.png
 mozilla/images/bg-darkgrey-2.png
 mozilla/images/bg-red-2.png
@@ -98,6 +110,8 @@ mozilla/images/LOVE.png
 mozilla/images/mozilla-logo-white.png
 mozilla/images/mozilla-logo.png
 mozilla/images/tab-2.png
+
+#css
 mozilla/styles/fonts.css
 mozilla/styles/print.css
 mozilla/styles/reset.css
