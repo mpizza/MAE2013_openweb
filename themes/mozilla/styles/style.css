@@ -573,6 +573,10 @@ small{
 	background: none;
 	color: #f00;
 }
-.slide .font36{
+.slide .font36 {
 	font-size: 36px;
+}
+
+.slide header.upperHeader {
+	margin-top: 25%;
 }

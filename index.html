@@ -111,7 +111,7 @@
 		</div>
 	</div>
 
-	<div class="slide blue" id="FirefoxOS">
+	<div class="slide blue" id="FirefoxOSIntro">
 		<div>
 			<section>
 				<header>
@@ -267,7 +267,7 @@
 	<div class="slide blue" id="istheplatform">
 		<div>
 			<section>
-				<header class="only_header">
+				<header class="only_header upperHeader">
 					<h2>Firefox OS is the Open Web platform</h2>
 				</header>
 			</section>
@@ -277,7 +277,7 @@
 	<div class="slide blue" id="OpenStandard">
 		<div>
 			<section>
-				<header class="only_header">
+				<header class="only_header upperHeader">
 					<h2>Open Standard Web Apps</h2>
 				</header>
 			</section>
@@ -456,11 +456,63 @@
 		</div>
 	</div>
 
+	<div class="slide blue" id="InstallAPI">
+		<div>
+			<section>
+				<header>
+					<h2>Installation API</h2>
+				</header>
+				<ul>
+					<li><a href="/en-US/docs/Web/API/Apps.install"><code>navigator.mozApps.install()</code></a></li>
+					<li><a href="/en-US/docs/Web/API/Apps.installPackage"><code>navigator.mozApps.installPackage()</code></a></li>
+					<li><a href="/en-US/docs/Web/API/Apps.getSelf"><code>navigator.mozApps.getSelf()</code></a></li>
+					<li><a href="/en-US/docs/Web/API/Apps.getInstalled"><code>navigator.mozApps.getInstalled()</code></a></li>
+					<li><a href="/en-US/docs/Web/API/Apps.checkInstalled"><code>navigator.mozApps.checkInstalled()</code></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="ManagementAPI">
+		<div>
+			<section>
+				<header>
+					<h2>Management API</h2>
+				</header>
+				<ul>
+					<li><a href="/en-US/docs/Web/API/Apps.mgmt.getAll"><code>navigator.mozApps.mgmt.getAll()</code></a></li>
+				</ul>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="Install">
+		<div>
+			<section>
+				<header>
+					<h2>Installation</h2>
+				</header>
+				<pre style="font-size:18px;">
+					<code>var request = window.navigator.mozApps.install(manifestUrl);</code>
+					<code>  request.onsuccess = function () {</code>
+					<code class="comment">    // Save the App object that is returned</code>
+					<code>    var appRecord = this.result;</code>
+					<code>    alert('Installation successful!');</code>
+					<code>  };</code>
+					<code>  request.onerror = function () {</code>
+					<code class="comment">    // Display the error information from the DOMError object</code>
+					<code>  	alert('Install failed, error: ' + this.error.name);</code>
+					<code>  };</code>
+				</pre>
+			</section>
+		</div>
+	</div>
+
 	<div class="slide blue" id="WebTelephony">
 		<div>
 			<section>
 				<header>
-					<h2>New Web Api : <code>WebTelephony</code></h2>
+					<h2>New Web API : <code>WebTelephony</code></h2>
 				</header>
 					<p>
 						<pre>
@@ -479,7 +531,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>New Web Api : <code>WebSMS</code></h2>
+					<h2>New Web API : <code>WebSMS</code></h2>
 				</header>
 					<p>
 						<pre>
@@ -676,7 +728,7 @@
 	<div class="slide blue" id="MustBePackaged">
 		<div>
 			<section>
-				<header class="only_header">
+				<header class="only_header upperHeader">
 					<h2>Privileged and Certified Must Be <em class="important">Packaged</em></h2>
 				</header>
 			</section>
@@ -745,7 +797,7 @@
 		</div>
 	</div>
 
-	<div class="slide blue cover w" id="PushToDevices">
+	<div class="slide blue" id="PushToDevices">
 		<div>
 			<section>
 				<header>

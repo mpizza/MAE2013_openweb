@@ -1,11 +1,11 @@
 {
   "name": "MAE2013",
   "description": "Mozilla MAE2013 Talk",
-  "launch_path": "/MAE2013_openweb/index.html",
-	"version": "0.5",
+  "launch_path": "/index.html",
+	"version": "0.8",
 	"installs_allowed_from": ["https://marketplace.firefox.com", "*"],
   "icons": {
-    "128": "/MAE2013_openweb/pictures/m-logo.png"
+    "128": "/pictures/m-logo.png"
   },
   "developer": {
     "name": "Mozilla",
