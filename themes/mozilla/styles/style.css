@@ -132,9 +132,9 @@ BODY {
 	}
 	.slide p.heart{
 		text-indent: -999999px;
-		margin: 50px;
-		width:180px;
-		height: 180px;
+		margin: 30px 0 0 80px;
+		width: 100px;
+		height: 100px;
 		background: url('../images/LOVE.png');
 		background-size: cover;
 		transition-property: transform;
@@ -571,7 +571,7 @@ small{
 
 .slide em.important{
 	background: none;
-	color: #f00;
+	color: #F2E76B;
 }
 .slide .font36 {
 	font-size: 36px;
