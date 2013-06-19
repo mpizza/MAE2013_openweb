@@ -2,7 +2,7 @@
   "name": "MAE2013",
   "description": "Mozilla MAE2013 Talk",
   "launch_path": "/index.html",
-	"version": "0.8",
+	"version": "1.0",
 	"installs_allowed_from": ["https://marketplace.firefox.com", "*"],
   "icons": {
     "128": "/pictures/m-logo.png"
