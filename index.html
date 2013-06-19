@@ -69,7 +69,7 @@
 		<div>
 			<section>
 				<header>
-					<h2>We’re building a better Internet</h2>
+					<h2>We’re Building A Better Internet</h2>
 				</header>
 				<p class="huge">Mozilla's mission is to promote <em class="important">“openness”</em>, 
 				<em class="important">“innovation”</em> &amp; <em class="important">“opportunity”</em> on the Web.</p>
@@ -119,7 +119,7 @@
 				</header>
 				<figure class="center">
 					<img src="pictures/firefoxos.png" alt="firefox OS"/>
-					<figcaption>Firefox OS is An Open Source Project</figcaption>
+					<figcaption class="font36">Firefox OS is An Open Source Project</figcaption>
 				</figure>
 			</section>
 		</div>
@@ -268,7 +268,7 @@
 		<div>
 			<section>
 				<header class="only_header upperHeader">
-					<h2>Firefox OS is the Open Web platform</h2>
+					<h2>Firefox OS is the <em class="important">“Mobile”</em> Open Web platform</h2>
 				</header>
 			</section>
 		</div>
@@ -290,7 +290,7 @@
 				<header>
 					<h2>Standards</h2>
 				</header>
-				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
+				<p><code>Javascript</code> + <code>&lt;HTML5&gt;</code> + <code>CSS</code> </p>
 			</section>
 		</div>
 	</div>
@@ -301,7 +301,7 @@
 				<header>
 					<h2>Standards</h2>
 				</header>
-				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
+				<p><code>Javascript</code> + <code>&lt;HTML5&gt;</code> + <code>CSS</code> </p>
 				<ul>
 					<li>
 						<code>navigator.geolocation</code>
@@ -317,7 +317,7 @@
 				<header>
 					<h2>Standards</h2>
 				</header>
-				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
+				<p><code>Javascript</code> + <code>&lt;HTML5&gt;</code> + <code>CSS</code> </p>
 				<ul>
 					<li>
 						<code>navigator.geolocation</code>
@@ -330,13 +330,13 @@
 		</div>
 	</div>
 
-	<div class="slide blue" id="offlinecache">
+	<div class="slide blue" id="animation">
 		<div>
 			<section>
 				<header>
 					<h2>Standards</h2>
 				</header>
-				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
+				<p><code>Javascript</code> + <code>&lt;HTML5&gt;</code> + <code>CSS</code> </p>
 				<ul>
 					<li>
 						<code>navigator.geolocation</code>
@@ -345,7 +345,7 @@
 						<code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>&nbsp;and&nbsp;<code>&lt;canvas&gt;</code>
 					</li>
 					<li>
-						offline cache: <code>cache.manifest</code>
+						<code>Css3 animation</code>
 					</li>
 				</ul>
 			</section>
@@ -358,7 +358,7 @@
 				<header>
 					<h2>Standards</h2>
 				</header>
-				<p><code>&lt;HTML5&gt;</code> + <code>CSS</code> + <code>Javascript</code></p>
+				<p><code>Javascript</code> + <code>&lt;HTML5&gt;</code> + <code>CSS</code> </p>
 				<ul>
 					<li>
 						<code>navigator.geolocation</code>
@@ -367,7 +367,7 @@
 						<code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>&nbsp;and&nbsp;<code>&lt;canvas&gt;</code>
 					</li>
 					<li>
-						offline cache: <code>cache.manifest</code>
+						<code>Css3 animation</code>
 					</li>
 					<li>
 						and more.....
@@ -388,6 +388,15 @@
 	</div>
 
 
+	<div class="slide blue" id="Mozilla-designedAPIs">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Mozilla-designed APIs</h2>
+				</header>
+		</div>
+	</div>
+
 	<div class="slide blue" id="innovation">
 		<div>
 			<section>
@@ -395,15 +404,6 @@
 					<h2>Innovation</h2>
 				</header>
 			</section>
-		</div>
-	</div>
-
-	<div class="slide blue" id="Mozilla-designedAPIs">
-		<div>
-			<section>
-				<header class="only_header">
-					<h2>Mozilla-designed APIs</h2>
-				</header>
 		</div>
 	</div>
 
@@ -415,7 +415,7 @@
 				</header>
 				<p class="font36">Using open Web <em class="important">“standards”</em> and 
 				<em class="important">“Mozilla-designed APIs”</em>, 
-				closing the gap between Web and native apps for the first time.</p>
+				closing the gap between <em class="important">Web</em> and <em class="important">native</em> apps for the first time.</p>
 			</section>
 		</div>
 	</div>
@@ -493,7 +493,7 @@
 					<h2>Installation</h2>
 				</header>
 				<pre style="font-size:18px;">
-					<code>var request = window.navigator.mozApps.install(manifestUrl);</code>
+					<code>  var request = window.navigator.mozApps.install(<mark class="important">manifestUrl</mark>);</code>
 					<code>  request.onsuccess = function () {</code>
 					<code class="comment">    // Save the App object that is returned</code>
 					<code>    var appRecord = this.result;</code>
@@ -520,7 +520,7 @@
 							<code>var telephony = navigator.mozTelephony;</code>
 							<code>    </code>
 							<code class="comment">// Then, we dial out.</code>
-							<code>var outgoing = telephony.dial(phoneNumber);</code>
+							<code>var outgoing = telephony.dial(<mark class="important">phoneNumber</mark>);</code>
 						</pre>
 					</p>
 			</section>
@@ -537,7 +537,7 @@
 						<pre>
 							<code class="comment">// Send a sms by mozSms</code>
 							<code>    </code>
-							<code>var req = navigator.mozSms.send(number, text);</code>
+							<code>var req = navigator.mozSms.send(<mark class="important">number</mark>, <mark class="important">text</mark>);</code>
 							<code>req.onsuccess = function onsuccess(e) {</code>
 							<code>  callback && callback(req.result);</code>
 							<code>};</code>
@@ -546,7 +546,6 @@
 			</section>
 		</div>
 	</div>
-
 	<div class="slide blue" id="moremozwebapi">
 		<div>
 			<section>
@@ -554,12 +553,23 @@
 					<h2>And More Web Api for Mobile</h2>
 				</header>
 					<ul class="font36">
-						<li>WebBluetooth</li>
 						<li>Contacts API</li>
 						<li>Device Storage API</li>
 						<li>WiFi Information API</li>
-						<li>more <a href="https://wiki.mozilla.org/WebAPI" title="webapi">Web Api</a></li>	
+						<li>more <a href="https://developer.mozilla.org/docs/WebAPI" title="webapi">Web Api</a></li>	
 					</ul>
+			</section>
+		</div>
+	</div>
+	<div class="slide blue" id="WebBluetooth">
+		<div>
+			<section>
+				<header>
+					<h2>WebBluetooth !!!</h2>
+				</header>
+					<figure class="center">
+						<img src="pictures/Bazinga.jpg" alt="marketplace" class="center">
+					</figure>
 			</section>
 		</div>
 	</div>
@@ -634,8 +644,8 @@
 					<h2>Hosted</h2>
 				</header>
 				<p class="font36">
-					<code>alarms</code>, <code>desktop-notification</code>, <code>storage</code>
-					<br/> and more .....
+					<code>alarms</code>, <code>desktop-notification</code>, <code>storage</code>(appcache, pinned apps, IndexedDB)
+					<a href="https://developer.mozilla.org/en-US/docs/Web/Apps/App_permissions">more</a>.....
 				</p>
 			</section>
 		</div>
@@ -648,7 +658,7 @@
 					<h2>Packaged</h2>
 				</header>
 					<p class="font36">A packaged app consists of a <em class="important">“ZIP file”</em> containing application resources
-					 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
+					 (HTML5, CSS, JavaScript, images, media).</p>
 			</section>
 		</div>
 	</div>
@@ -660,7 +670,7 @@
 					<h2>Packaged</h2>
 				</header>
 					<p class="font36">A packaged app consists of a <em class="important">“ZIP file”</em> containing application resources
-					 (HTML5, CSS, JavaScript, images, media), as well as a manifest that provides an explicit list of assets and their corresponding hashes.</p>
+					 (HTML5, CSS, JavaScript, images, media).</p>
 						<img src="pictures/calculator.png" alt="marketplace calculator" class="middle">
 			</section>
 		</div>
@@ -673,8 +683,8 @@
 					<h2>Packaged</h2>
 				</header>
 				<p class="font36">
-						If <em>reviewed</em>, <em>approved</em>, and <em>digitally signed
-						</em> by an <br/><em> authorized Marketplace.</em>
+						If <em class="important">reviewed</em>, <em class="important">approved</em>, and <em class="important">digitally signed
+						</em> by an <br/><em class="important"> authorized Marketplace.</em>
 				</p>
 			</section>
 		</div>
@@ -703,7 +713,7 @@
 					 All the permissions of hosted apps
 				</p>
 				<p class="font36">	
-					<code>contacts</code>, <code>systemXHR</code>, <code>tcp-socket</code> and more......
+					<code>contacts</code>, <code>tcp-socket</code>, <br /><code>device-storage</code>(music, picture, video and sdcard), and <a href="https://developer.mozilla.org/en-US/docs/Web/Apps/App_permissions">more</a>....
 				</p>
 			</section>
 		</div>
@@ -718,8 +728,41 @@
 					<p>
 						System apps that have been approved by the <em class="important">Operator</em> or <em class="important">OEM</em> (due to risk of device corruption or risk to critical functionality). System apps and services only not intended for third-party applications.
 					</p>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="God">
+		<div>
+			<section>
+				<header class="only_header upperHeader">
+					<h2>If You Want Be A God On Firefox OS</h2>
+				</header>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="JoinUS">
+		<div>
+			<section>
+				<header>
+					<h2>Partner With Us!!</h2>
+				</header>
+					<figure class="center">
+					<img src="pictures/we_want_you.jpg" alt="marketplace" class="center">
+					</figure>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="SystemApps">
+		<div>
+			<section>
+				<header>
+					<h2>System Apps</h2>
+				</header>
 					<p>
-						This designation is reserved for just a small number of critical applications. Examples: SMS, Bluetooth, camera, system clock, telephony, and the default dialer (to ensure that emergency services are always accessible).
+					SMS, Bluetooth, camera, system clock, telephony, and the default dialer (to ensure that emergency services are always accessible).
 					</p>
 			</section>
 		</div>
@@ -757,11 +800,21 @@
 		<div>
 			<section>
 				<header>
-					<h2>Ready To Go To The Firefox MarketPlace?</h2>
+					<h2>Ready To Publish Your App On The Firefox MarketPlace?</h2>
 				</header>
 				<figure class="center">
 					<img src="pictures/marketplace.png" alt="marketplace" class="center">
 				</figure>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="WithoutTesting">
+		<div>
+			<section>
+				<header class="only_header">
+					<h2>Without Testing ?!</h2>
+				</header>
 			</section>
 		</div>
 	</div>
@@ -797,19 +850,6 @@
 		</div>
 	</div>
 
-	<div class="slide blue" id="PushToDevices">
-		<div>
-			<section>
-				<header>
-					<h2>Push To Devices</h2>
-				</header>
-				<figure class="center">
-					<img src="pictures/device-connected.png" alt="push to devices">
-				</figure>
-			</section>
-		</div>
-	</div>
-
 	<div class="slide blue" id="Debuger">
 		<div>
 			<section>
@@ -818,6 +858,19 @@
 				</header>
 				<figure class="center">
 					<img src="pictures/Simulator-overview.png" alt="simulator overview">
+				</figure>
+			</section>
+		</div>
+	</div>
+
+	<div class="slide blue" id="PushToDevices">
+		<div>
+			<section>
+				<header>
+					<h2>Push To Devices</h2>
+				</header>
+				<figure class="center">
+					<img src="pictures/device-connected.png" alt="push to devices">
 				</figure>
 			</section>
 		</div>
