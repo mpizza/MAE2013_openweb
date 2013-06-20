@@ -86,11 +86,14 @@
 		return '#' + slideList[normalizeSlideNumber(slideNumber)].id;
 	}
 
+	var dataRef = 'https://letshow.firebaseIO.com/gary/mae2013/slides';
+	var syncRef = new Firebase(dataRef);
 	function goToSlide(slideNumber) {
 		url.hash = getSlideHash(slideNumber);
 
 		if (!isListMode()) {
 			updateProgress(slideNumber);
+			syncRef.set(slideNumber);
 		}
 	}
 
@@ -117,7 +120,7 @@
 			url.hash = '#' + slideId;
 			history.replaceState(null, null, url.pathname + '?full#' + slideId);
 			enterSlideMode();
-
+			syncRef.set(getCurrentSlideNumber());
 			updateProgress(getCurrentSlideNumber());
 		}
 	}
