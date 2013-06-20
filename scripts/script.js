@@ -278,6 +278,13 @@
 		}
 	}, false);
 
+    var dataRef = 'https://letshow.firebaseIO.com/gary/mae2013/slides';
+    var syncRef = new Firebase(dataRef);
+    syncRef.on('value', function(snapshot) {
+      console.log('go to '+snapshot.val());
+      goToSlide(snapshot.val());
+    });
+
 }());
 
 
